@@ -25,28 +25,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="jumbotron text-center">
-          <h2>What is your favorite front-end framework in 2017?</h2>
+        <div className="jumbotron text-center rounded-0">
+          <h2>What is your favorite front-end framework?</h2>
           <h4>Click on the logos below to vote!</h4>
           <br />
           <div className="row justify-content-around t-item-row">
 
-
-            <div className="col-sm-2">
-              <span onClick={this.handleVoteAngular}>
-                <img src="./images/angular_logo.png" alt="" width="80" /><br />Angular
+            <div className="col-sm-2" onClick={this.handleVoteAngular}>
+              <span>
+                <img src="./images/angular_logo.png" alt="angular" />
+                <div>Angular</div>
               </span>
             </div>
 
-            <div className="col-sm-2">
-              <span onClick={this.handleVoteReact}>
-                <img src="./images/react_logo.png" alt="" width="80" /><br />React
+            <div className="col-sm-2" onClick={this.handleVoteReact}>
+              <span>
+                <img src="./images/react_logo.png" alt="react" />
+                <div>React</div>
                 </span>
             </div>
 
-            <div className="col-sm-2">
-              <span onClick={this.handleVoteVuejs}>
-                <img src="./images/vuejs_logo.png" alt="" width="80" /><br />Vuejs
+            <div className="col-sm-2" onClick={this.handleVoteVuejs}>
+              <span>
+                <img src="./images/vuejs_logo.png" alt="vuejs" />
+                <div>Vuejs</div>
                 </span>
             </div>
           </div>
