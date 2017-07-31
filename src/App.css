@@ -1,0 +1,16 @@
+.progress-bar {
+  transition: width .2s;
+}
+
+.t-item-row > [class*="col-"] {
+  cursor: pointer;
+  transition-duration: .2s;
+}
+.t-item-row > [class*="col-"]:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.t-item-row img{
+  margin: 4px;
+}
